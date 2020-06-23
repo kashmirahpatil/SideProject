@@ -3,3 +3,12 @@
     padding:2px;
     margin-left: 7px;
 }
+.navbar-brand {
+    padding: 0px; /* firefox bug fix */
+  }
+  .navbar-brand>img {
+    border-radius: 5px;
+    height: 30;
+    padding: 0px; /* firefox bug fix */
+    width: auto;
+  }

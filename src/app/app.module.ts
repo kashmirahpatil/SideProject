@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import * as platformBrowser from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,12 @@ import { FooterComponent } from './footer/footer.component';
     ProductsComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent,
+    
   ],
   imports: [
-    BrowserModule,
+    platformBrowser.BrowserModule,
     AppRoutingModule
   ],
   providers: [],
