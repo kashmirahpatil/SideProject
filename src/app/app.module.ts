@@ -9,6 +9,13 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule }   from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from 'src/environments/environment';
+import { GalleryComponent } from './gallery/gallery.component';
+
+
 
 @NgModule({
   declarations: [
@@ -19,11 +26,14 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
+    GalleryComponent,
     
   ],
   imports: [
     platformBrowser.BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
