@@ -1,3 +1,19 @@
 .container-fluid{
     margin-top: 120px;
 }
+.imagecontainer{
+	float: left;
+}
+
+.pimage{
+	width: auto;
+	height: 250px;
+	border: solid 4px #CCC;
+}
+
+.producttype{
+	padding: 10px;
+}
+.desccontainer{
+    float:right;
+}
